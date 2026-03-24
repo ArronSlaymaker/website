@@ -4,6 +4,15 @@ body {
 h1 {
   color:  gold;
 }
-p {
+p1 {
   color: ochre;
+}
+p2 {
+  color: green;
+}
+p3 {
+  color: red;
+}
+p4 {
+  color: orange;
 }
