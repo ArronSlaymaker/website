@@ -10,21 +10,10 @@
 	<div id='turn'>x's Turn></div>
    
 	<table>
-		var turn = "x";
-// document.getElement("td").......
-$("td").on("click", function () {
-	console.log("clicked");
-    var $square = $(this);
-    if ($square.text() == "") {
-        $square.text(turn);
-        if (turn == "x") {
-            turn = "o";
-        } else {
-            turn = "x";
-        }
-        $("#turn").text(turn + "'s turn");
-    }
-});
+		<!-- rest of table here -->
 	</table>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="script.js" type="text/javascript"></script
+	
 	</body>
 </html>
