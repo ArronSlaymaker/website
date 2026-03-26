@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title>Tic Tac Toe</Title>
+    <link href="tictactoe.css"
+  </head>
+    <body>
+      <h1>Play TicTacToe</h1>
+      var turn = "x";
+// document.getElement("td").......
+$("td").on("click", function () {
+	console.log("clicked");
+    var $square = $(this);
+    if ($square.text() == "") {
+        $square.text(turn);
+        if (turn == "x") {
+            turn = "o";
+        } else {
+            turn = "x";
+        }
+        $("#turn").text(turn + "'s turn");
+    }
+});
+
+    </body>
+</html>
