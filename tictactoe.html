@@ -6,21 +6,23 @@
   </head>
     <body>
       <h1>Play TicTacToe</h1>
-      var turn = "x";
-// document.getElement("td").......
-$("td").on("click", function () {
-	console.log("clicked");
-    var $square = $(this);
-    if ($square.text() == "") {
-        $square.text(turn);
-        if (turn == "x") {
-            turn = "o";
-        } else {
-            turn = "x";
-        }
-        $("#turn").text(turn + "'s turn");
-    }
-});
 
-    </body>
+	<div id='turn'>x's Turn></div>
+   
+	<table>
+		var turn = "x";
+$('td').on('click', function(){
+var $square = $(this);
+if($square.text() == ""){
+$square.text(turn);
+if(turn == "x"){
+turn = "o";
+}else{
+turn = "x";
+}
+$('#turn').text(turn + "'s turn");
+}
+});
+	</table>
+	</body>
 </html>
